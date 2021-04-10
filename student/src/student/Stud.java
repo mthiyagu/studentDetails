@@ -40,7 +40,7 @@ public class Stud {
 		System.out.println("Science: " + science);
 	}
 
-	void tot() {
+	void total() {
 		for (int i = 0; i < rollno.size(); i++) {
 			total.add(english.get(i) + maths.get(i) + science.get(i));
 		}
@@ -48,7 +48,7 @@ public class Stud {
 
 	}
 
-	void avg() {
+	void average() {
 		for (int i = 0; i < rollno.size(); i++) {
 			average.add((float) (total.get(i) / 3));
 		}

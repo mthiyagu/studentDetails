@@ -25,7 +25,7 @@ public class Studetails {
 		 */
 		scan.close();
 		S1.display();
-		S1.tot();
-		S1.avg();
+		S1.total();
+		S1.average();
 	}
 }
