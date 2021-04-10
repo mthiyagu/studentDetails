@@ -6,14 +6,14 @@ import java.util.Scanner;
 public class Studetails {
 
 	public static void main(String args[]) {
-		Scanner Record = new Scanner(System.in);
-		String rec;
+		Scanner scan = new Scanner(System.in);
+		String record;
 		Stud S1 = new Stud();
 		do {
 			S1.insert();
 			System.out.println("Want to add more record? Type y/n : ");
-			rec = Record.nextLine();
-		} while (!rec.equals("n"));
+			record = scan.nextLine();
+		} while (!record.equals("n"));
 
 		/*
 		 * switch(rec) { case "y":
@@ -24,7 +24,7 @@ public class Studetails {
 		 * 
 		 * }
 		 */
-		Record.close();
+		scan.close();
 		S1.display();
 		S1.tot();
 		S1.avg();
